@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários em HTML</title>
+    <style>
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulários:</h1>
+    <p>Os formulários são usados para coletar dados dos usuários. Eles são criados com a tag &lt;form&gt; e incluem vários tipos de campos de entrada:</p>
+    <pre>
+&lt;form action="destino_dos_dados"&gt;
+    &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+    &lt;input id="nome" type="text" placeholder="Digite seu nome" required&gt;
+    &lt;br&gt;
+
+    &lt;label for="sobrenome"&gt;Sobrenome:&lt;/label&gt;
+    &lt;input id="sobrenome" type="text" placeholder="Sobrenome" required&gt;
+    &lt;br&gt;
+
+    &lt;label for="senha"&gt;Senha:&lt;/label&gt;
+    &lt;input type="password" id="senha" placeholder="Digite a senha" required&gt;
+    &lt;br&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" placeholder="Email" required&gt;
+    &lt;br&gt;
+
+    &lt;label for="data"&gt;Data:&lt;/label&gt;
+    &lt;input type="date" id="data" required&gt;
+    &lt;br&gt;
+
+    &lt;label for="cor"&gt;Cor:&lt;/label&gt;
+    &lt;input type="color" id="cor" required&gt;
+    &lt;br&gt;
+
+    &lt;label for="escolhas"&gt;Escolha:&lt;/label&gt;
+    &lt;select id="escolhas" name="escolhas"&gt;
+        &lt;option selected disabled&gt;Escolha&lt;/option&gt;
+        &lt;option value="1"&gt;1&lt;/option&gt;
+        &lt;option value="2"&gt;2&lt;/option&gt;
+        &lt;option value="3"&gt;3&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;br&gt;
+
+    &lt;label for="texto"&gt;Texto:&lt;/label&gt;
+    &lt;textarea rows="10" cols="35" id="texto" placeholder="Digite seu texto aqui"&gt;&lt;/textarea&gt;
+    &lt;br&gt;
+
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;
+    </pre>
+    <p>Exemplo exibido:</p>
+    <form action="">
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" placeholder="Digite seu nome" required>
+        <br>
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input id="sobrenome" type="text" placeholder="Sobrenome" required>
+        <br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Digite a senha" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Email" required>
+        <br>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" required>
+        <br>
+
+        <label for="cor">Cor:</label>
+        <input type="color" id="cor" required>
+        <br>
+
+        <label for="escolhas">Escolha:</label>
+        <select id="escolhas" name="escolhas">
+            <option selected disabled>Escolha</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br>
+
+        <label for="texto">Texto:</label>
+        <textarea rows="10" cols="35" id="texto" placeholder="Digite seu texto aqui"></textarea>
+        <br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <p>Link para mais informações sobre formulários: <a href="https://youtu.be/nPEpaft1y1k?t=9933" target="_blank">Formulários em HTML</a></p>
+    <a href="pagina5.html">Iframe</a>
+    <br>
+    <a href="index.html">Inicio</a>
+
+</body>
+</html>

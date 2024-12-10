@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informações sobre HTML">
+    <meta name="keywords" content="HTML, web development">
+    <meta name="author" content="wallace">
+    <title>Introdução ao HTML</title>
+    <style>
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML = Hyper Text Markup Language</h1>
+    <p><strong>Formato básico de web para estrutura:</strong> .html, .htm</p>
+
+    <h2>Estrutura Básica</h2>
+    <p>Todo documento HTML começa com a declaração do tipo de documento e é composto por elementos estruturais:</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;page title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Heading content&lt;/h2&gt;
+    &lt;p&gt;Paragraph&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <h2>Hipertextos</h2>
+    <p>Hipertextos são links que conectam um documento HTML a outro. Eles são criados usando a tag &lt;a&gt;:</p>
+    <pre>
+&lt;a href='caminho' target='_blank'&gt;Link&lt;/a&gt;
+    </pre>
+    <p>Exemplo exibido:</p>
+    <a href="https://www.example.com" target="_blank">Link</a>
+
+    <h2>Linguagem de Marcação</h2>
+    <p>HTML usa <em>tags</em> para marcar os elementos de um documento. Algumas tags comuns incluem:</p>
+    <pre>&lt;title&gt;&lt;/title&gt;</pre>
+
+    <h3>Tags Comuns:</h3>
+    <ul>
+        <li>&lt;img&gt; - Imagem</li>
+        <li>&lt;video&gt; - Vídeo</li>
+        <li>&lt;audio&gt; - Áudio</li>
+    </ul>
+
+    <h3>Lista Desordenada:</h3>
+    <p>Uma lista desordenada é criada usando as tags &lt;ul&gt; e &lt;li&gt;. Exemplo:</p>
+    <pre>
+&lt;ul&gt;
+    &lt;li&gt;Arroz&lt;/li&gt;
+    &lt;li&gt;Feijão&lt;/li&gt;
+    &lt;li&gt;Macarrão&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+    <p>Exemplo exibido:</p>
+    <ul>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Macarrão</li>
+    </ul>
+
+    <h3>Meta Tags:</h3>
+    <p>Meta tags fornecem metadados sobre o documento HTML e são usadas principalmente pelo navegador e motores de busca:</p>
+    <ul>
+        <li>&lt;meta charset="UTF-8"&gt; - Define o conjunto de caracteres como UTF-8</li>
+        <li>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt; - Compatibilidade com Internet Explorer</li>
+        <li>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; - Adaptabilidade para diferentes tamanhos de tela</li>
+        <li>&lt;meta name="description" content="site"&gt; - Descrição do site</li>
+        <li>&lt;meta name="keywords" content="site, html"&gt; - Palavras-chave</li>
+        <li>&lt;meta name="author" content="wallace"&gt; - Autor do site</li>
+    </ul>
+
+    <h3>Títulos:</h3>
+    <p>Títulos são usados para estruturar o conteúdo em diferentes níveis de importância:</p>
+    <ul>
+        <li>&lt;h1&gt; - Título principal (maior)</li>
+        <li>&lt;h2&gt; - Subtítulo</li>
+        <li>&lt;h3&gt; ...</li>
+        <li>&lt;h4&gt; ...</li>
+        <li>&lt;h5&gt; ...</li>
+        <li>&lt;h6&gt; - Subtítulo menor (menor)</li>
+    </ul>
+
+    <h3>Texto:</h3>
+    <p>Tags para formatação de texto:</p>
+    <ul>
+        <li>&lt;p&gt; - Parágrafo</li>
+        <li>&lt;b&gt; - Negrito</li>
+        <li>&lt;strong&gt; - Dá ênfase ao texto</li>
+        <li>&lt;hr&gt; - Linha horizontal</li>
+        <li>&lt;br&gt; - Quebra de linha</li>
+        <li>&lt;i&gt; - Itálico</li>
+        <li>&lt;u&gt; - Sublinhado</li>
+        <li>&lt;small&gt; - Diminui o texto</li>
+        <li>&lt;del&gt; - Texto excluído</li>
+        <li>&lt;sup&gt; - Texto superior</li>
+        <li>&lt;sub&gt; - Texto inferior</li>
+        <li>&lt;mark&gt; - Marcação de texto</li>
+    </ul>
+
+    <h3>Citações:</h3>
+    <p>Tags para citações e referências:</p>
+    <ul>
+        <li>&lt;abbr title="significado"&gt; - Abreviação</li>
+        <li>&lt;address&gt; - Endereço</li>
+        <li>&lt;cite&gt; - Citação de obras</li>
+        <li>&lt;q&gt; - Citação curta</li>
+        <li>&lt;blockquote&gt; - Citação longa, indentada</li>
+        <li>&lt;bdo dir="rtl"&gt; - Inverte a direção do texto</li>
+    </ul>
+
+    <h3>Comentários:</h3>
+    <p>Os comentários são usados para deixar notas no código que não serão exibidas no navegador:</p>
+    <pre>&lt;!-- comentário --&gt;</pre>
+    <p>Exemplo de comentário visível no código-fonte:</p>
+    <!-- Este é um comentário -->
+
+    <h3>Links:</h3>
+    <p>Os links são criados com a tag &lt;a&gt; e podem abrir em uma nova aba usando o atributo target:</p>
+    <pre>
+&lt;a href='caminho' target='_blank'&gt;Link&lt;/a&gt;
+    </pre>
+
+    <a href="pagina2.html">Próxima</a>
+</body>
+</html>
