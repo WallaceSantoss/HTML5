@@ -5,17 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários em HTML</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
         pre {
             background-color: #f4f4f4;
             padding: 10px;
             border: 1px solid #ccc;
             overflow: auto;
+            border-radius: 5px;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Formulários:</h1>
-    <p>Os formulários são usados para coletar dados dos usuários. Eles são criados com a tag &lt;form&gt; e incluem vários tipos de campos de entrada:</p>
+    <h1>Formulários em HTML</h1>
+    <p>Os formulários são usados para coletar dados dos usuários. Eles são criados com a tag <code>&lt;form&gt;</code> e incluem vários tipos de campos de entrada. Abaixo, você encontrará um exemplo de um formulário simples.</p>
+    
+    <h2>Exemplo de Código HTML</h2>
     <pre>
 &lt;form action="destino_dos_dados"&gt;
     &lt;label for="nome"&gt;Nome:&lt;/label&gt;
@@ -58,32 +106,27 @@
     &lt;input type="submit" value="Enviar"&gt;
 &lt;/form&gt;
     </pre>
-    <p>Exemplo exibido:</p>
+
+    <h2>Exemplo de Formulário Ex ibido:</h2>
     <form action="">
         <label for="nome">Nome:</label>
         <input id="nome" type="text" placeholder="Digite seu nome" required>
-        <br>
-
+        
         <label for="sobrenome">Sobrenome:</label>
         <input id="sobrenome" type="text" placeholder="Sobrenome" required>
-        <br>
-
+        
         <label for="senha">Senha:</label>
         <input type="password" id="senha" placeholder="Digite a senha" required>
-        <br>
-
+        
         <label for="email">Email:</label>
         <input type="email" id="email" placeholder="Email" required>
-        <br>
-
+        
         <label for="data">Data:</label>
         <input type="date" id="data" required>
-        <br>
-
+        
         <label for="cor">Cor:</label>
         <input type="color" id="cor" required>
-        <br>
-
+        
         <label for="escolhas">Escolha:</label>
         <select id="escolhas" name="escolhas">
             <option selected disabled>Escolha</option>
@@ -91,18 +134,29 @@
             <option value="2">2</option>
             <option value="3">3</option>
         </select>
-        <br>
-
+        
         <label for="texto">Texto:</label>
         <textarea rows="10" cols="35" id="texto" placeholder="Digite seu texto aqui"></textarea>
-        <br>
-
+        
         <input type="submit" value="Enviar">
     </form>
-    <p>Link para mais informações sobre formulários: <a href="https://youtu.be/nPEpaft1y1k?t=9933" target="_blank">Formulários em HTML</a></p>
+
+    <h2>Explicação dos Campos</h2>
+    <p>O formulário acima contém os seguintes campos:</p>
+    <ul>
+        <li><strong>Nome:</strong> Campo para inserir o nome do usuário.</li>
+        <li><strong>Sobrenome:</strong> Campo para inserir o sobrenome do usuário.</li>
+        <li><strong>Senha:</strong> Campo para inserir uma senha, que será ocultada.</li>
+        <li><strong>Email:</strong> Campo para inserir um endereço de email.</li>
+        <li><strong>Data:</strong> Campo para selecionar uma data.</li>
+        <li><strong>Cor:</strong> Campo para escolher uma cor.</li>
+        <li><strong>Escolha:</strong> Um menu suspenso para selecionar uma opção.</li>
+        <li><strong>Texto:</strong> Área de texto para inserir informações adicionais.</li>
+    </ul>
+
+    <p>Para mais informações sobre formulários, você pode assistir ao vídeo: <a href="https://youtu.be/nPEpaft1y1k?t=9933" target="_blank">Formulários em HTML</a>.</p>
     <a href="pagina5.html">Iframe</a>
     <br>
-    <a href="index.html">Inicio</a>
-
+    <a href="index.html">Início</a>
 </body>
 </html>

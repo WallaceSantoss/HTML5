@@ -5,17 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listas em HTML</title>
     <style>
-        pre {
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
             background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #eaeaea;
             padding: 10px;
             border: 1px solid #ccc;
             overflow: auto;
+        }
+        ul, ol {
+            margin: 10px 0;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <h1>Listas Não Ordenadas:</h1>
-    <p>Listas não ordenadas são criadas com as tags &lt;ul&gt; e &lt;li&gt;:</p>
+    <p>Listas não ordenadas são criadas com as tags <code>&lt;ul&gt;</code> e <code>&lt;li&gt;</code>:</p>
     <pre>
 &lt;ul&gt;
     &lt;li&gt;Arroz&lt;/li&gt;
@@ -35,7 +52,7 @@
     </ul>
 
     <h1>Listas Ordenadas:</h1>
-    <p>Listas ordenadas são criadas com as tags &lt;ol&gt; e &lt;li&gt;:</p>
+    <p>Listas ordenadas são criadas com as tags <code>&lt;ol&gt;</code> e <code>&lt;li&gt;</code>:</p>
     <pre>
 &lt;ol&gt;
     &lt;li&gt;Arroz&lt;/li&gt;
@@ -48,8 +65,21 @@
         <li>Carne</li>
     </ol>
 
-    <a href="pagina5.html">Iframes</a>
-    <br>
-    <a href="pagina3.html">Tabelas</a>
+    <h2>Explicação das Tags:</h2>
+    <ul>
+        <li><code>&lt;ul&gt;</code>: Define uma lista não ordenada.</li>
+        <li><code>&lt;ol&gt;</code>: Define uma lista ordenada.</li>
+        <li><code>&lt;li&gt;</code>: Define um item de lista, que pode ser usado em ambas as listas.</li>
+    </ul>
+
+    <h2>Links Relacionados:</h2>
+    <ul>
+        <li><a href="pagina5.html">Iframes</a></li>
+        <li><a href="pagina3.html">Tabelas</a></li>
+    </ul>
+
+    <footer>
+        <p>Esta página foi criada para demonstrar o uso de listas em HTML e suas respectivas tags.</p>
+    </footer>
 </body>
 </html>

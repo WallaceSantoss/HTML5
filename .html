@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #eaeaea;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        code {
+            font-family: monospace;
+            background-color: #eaeaea;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .example {
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Aprendendo HTML</h1>
+    <p>HTML (HyperText Markup Language) é a linguagem padrão para criar páginas da web. Abaixo estão algumas das tags HTML mais comuns, com exemplos e explicações sobre seus atributos.</p>
+
+    <h2>&lt;h1&gt; a &lt;h6&gt;</h2>
+    <div class="example">
+        <h3>Exemplo:</h3>
+        <pre><code>&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+&lt;h3&gt;Seção&lt;/h3&gt;</code></pre>
+        <h1>Título Principal</h1>
+        <h2>Subtítulo</h2>
+        <h3>Seção</h3>
+    </div>
+    <p>As tags de cabeçalho vão de &lt;h1&gt; (mais importante) a &lt;h6&gt; (menos importante). Você pode usar o atributo <code>style</code> para alterar a aparência, como <code>style="color:red;"</code>.</p>
+
+    <h2>&lt;p&gt;</h2>
+    <div class="example">
+        <h3>Exemplo:</h3>
+        <pre><code>&lt;p&gt;Este é um parágrafo.&lt;/p&gt;</code></pre>
+        <p>Este é um parágrafo.</p>
+    </div>
+    <p>A tag &lt;p&gt; é usada para definir parágrafos. Você pode usar o atributo <code>class</code> para aplicar estilos CSS.</p>
+
+    <h2>&lt;a&gt;</h2>
+    <div class="example">
+        <h3>Exemplo:</h3>
+        <pre><code>&lt;a href="https://www.exemplo.com"&gt;Visite o Exemplo&lt;/a&gt;</code></pre>
+        <a href="https://www.exemplo.com" target="_blank">Visite o Exemplo</a>
+    </div>
+    <p>A tag &lt;a&gt; é usada para criar links. O atributo <code>href</code> especifica o URL do link, e <code>target="_blank"</code> abre o link em uma nova aba.</p>
+
+    <h2>&lt;img&gt;</h2>
+    <div class="example">
+        <h3>Exemplo:</h3>
+        <pre><code>&lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;</code></pre>
+        <img src="https://via.placeholder.com/150" alt="Imagem de exemplo">
+    </div>
+    <p>A tag &lt;img&gt; é usada para inserir imagens. O atributo <code>src</code> especifica o caminho da imagem, e <code>alt</code> fornece uma descrição alternativa.</p>
+
+    <h2>&lt;ul&gt; e &lt;li&gt;</h2>
+    <div class="example">
+        <h3>Exemplo:</h3>
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2 </li>
+        </ul>
+    </div>
+    <p>A tag &lt;ul&gt; é usada para criar listas não ordenadas, enquanto &lt;li&gt; define cada item da lista. Você pode usar o atributo <code>type</code> na tag &lt;ul&gt; para alterar o estilo da lista.</p>
+
+    <h2>&lt;div&gt;</h2>
+    <div class="example">
+        <h3>Exemplo:</h3>
+        <pre><code>&lt;div class="container"&gt;
+    Conteúdo aqui
+&lt;/div&gt;</code></pre>
+        <div class="container">Conteúdo aqui</div>
+    </div>
+    <p>A tag &lt;div&gt; é um contêiner genérico para agrupar outros elementos. O atributo <code>class</code> pode ser usado para aplicar estilos CSS específicos.</p>
+
+    <h2>&lt;form&gt;</h2>
+    <div class="example">
+        <h3>Exemplo:</h3>
+        <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;input type="text" name="nome" placeholder="Seu nome"&gt;
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;</code></pre>
+        <form action="/submit" method="post">
+            <input type="text" name="nome" placeholder="Seu nome">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <p>A tag &lt;form&gt; é usada para criar formulários. O atributo <code>action</code> especifica para onde os dados do formulário serão enviados, e <code>method</code> define o método de envio (GET ou POST).</p>
+
+    <h2>&lt;table&gt;</h2>
+    <div class="example">
+        <h3>Exemplo:</h3>
+        <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Cabeçalho 1&lt;/th&gt;
+        &lt;th&gt;Cabeçalho 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Dados 1&lt;/td&gt;
+        &lt;td&gt;Dados 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        <table>
+            <tr>
+                <th>Cabeçalho 1</th>
+                <th>Cabeçalho 2</th>
+            </tr>
+            <tr>
+                <td>Dados 1</td>
+                <td>Dados 2</td>
+            </tr>
+        </table>
+    </div>
+    <p>A tag &lt;table&gt; é usada para criar tabelas. As tags &lt;tr&gt; definem linhas, &lt;th&gt; define cabeçalhos de coluna, e &lt;td&gt; define células de dados. Você pode usar o atributo <code>border</code> para adicionar bordas à tabela.</p>
+
+    <h2>&lt;span&gt;</h2>
+    <div class="example">
+        <h3>Exemplo:</h3>
+        <pre><code>&lt;span style="color:blue;"&gt;Texto em azul&lt;/span&gt;</code></pre>
+        <span style="color:blue;">Texto em azul</span>
+    </div>
+    <p>A tag &lt;span&gt; é usada para aplicar estilos a partes de um texto. O atributo <code>style</code> pode ser usado para definir a cor, tamanho e outros estilos.</p>
+
+    <h2>&lt;strong&gt; e &lt;em&gt;</h2>
+    <div class="example">
+        <h3>Exemplo:</h3>
+        <pre><code>&lt;strong&gt;Texto em negrito&lt;/strong&gt;
+&lt;em&gt;Texto em itálico&lt;/em&gt;</code></pre>
+        <strong>Texto em negrito</strong>
+        <em>Texto em itálico</em>
+    </div>
+    <p>A tag &lt;strong&gt; é usada para dar ênfase ao texto, geralmente exibido em negrito, enquanto &lt;em&gt; é usada para ênfase em itálico. Ambos podem ser estilizados com CSS.</p>
+
+    <footer>
+        <p>Esta página é um exemplo básico de HTML. Explore e modifique os exemplos para aprender mais sobre HTML e suas funcionalidades. Você pode adicionar mais tags e atributos conforme necessário para expandir seu conhecimento e prática.</p>
+    </footer>
+</body>
+</html>

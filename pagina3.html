@@ -1,22 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas em HTML</title>
     <style>
-        pre {
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
             background-color: #f4f4f4;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        pre {
+            background-color: #eaeaea;
             padding: 10px;
             border: 1px solid #ccc;
             overflow: auto;
         }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
+
 <body>
     <h1>Tabelas:</h1>
-    <p>As tabelas são usadas para organizar dados em formato tabular. Elas são criadas com as tags &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, e &lt;td&gt;:</p>
-    
+    <p>As tabelas são usadas para organizar dados em formato tabular. Elas são criadas com as tags
+        <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, e <code>&lt;td&gt;</code>:</p>
+
     <h2>Exemplo de Tabela Simples:</h2>
     <pre>
 &lt;table border="1"&gt;
@@ -88,9 +126,25 @@
             <td>1,80m</td>
         </tr>
     </table>
-    
-    <a href="pagina4.html">Listas</a>
-    <br>
-    <a href="pagina2.html">Imagens</a>
+
+    <h2>Explicação das Tags:</h2>
+    <ul>
+        <li><code>&lt;table&gt;</code>: Define a tabela.</li>
+        <li><code>&lt;tr&gt;</code>: Define uma linha na tabela.</li>
+        <li><code>&lt;th&gt;</code>: Define uma célula de cabeçalho, que é geralmente exibida em negrito e centralizada.
+        </li>
+        <li><code>&lt;td&gt;</code>: Define uma célula de dados na tabela.</li>
+    </ul>
+
+    <h2>Links Relacionados:</h2>
+    <ul>
+        <li><a href="pagina4.html">Listas</a></li>
+        <li><a href="pagina2.html">Imagens</a></li>
+    </ul>
+
+    <footer>
+        <p>Esta página foi criada para demonstrar o uso de tabelas em HTML e suas respectivas tags.</p>
+    </footer>
 </body>
+
 </html>

@@ -3,13 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Àudio</title>
+    <title>Reprodutor de Áudio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        audio {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 600px; /* Limita a largura do reprodutor de áudio */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 10px;
+        }
+        .audio-description {
+            margin-top: 20px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Àudio</h1>
+    <h1>Reprodutor de Áudio</h1>
+    <p>Este é um exemplo de como incorporar um reprodutor de áudio em uma página HTML. O elemento <code>&lt;audio&gt;</code> permite que você adicione arquivos de áudio que os usuários podem reproduzir diretamente em seu navegador.</p>
+    
+    <h2>Exemplo de Áudio</h2>
     <audio controls>
         <source src="https://soundcloud.com/examples/mp3/SoudHelix-Song-9y.mp3" type="audio/mpeg">
-        
+        Seu navegador não suporta o elemento de áudio.
     </audio>
+
+    <div class="audio-description">
+        <h3>Descrição do Áudio</h3>
+        <p>O áudio acima é um exemplo de uma faixa de música. Você pode usar o controle de reprodução para pausar, reproduzir ou ajustar o volume do áudio.</p>
+    </div>
+
+    <h2>Como Usar o Elemento de Áudio</h2>
+    <p>Para adicionar um arquivo de áudio à sua página, você pode usar a seguinte estrutura:</p>
+    <pre>
+&lt;audio controls&gt;
+    &lt;source src="URL_DO_AUDIO" type="audio/mpeg"&gt;
+    Seu navegador não suporta o elemento de áudio.
+&lt;/audio&gt;
+    </pre>
+    <p>Substitua <code>URL_DO_AUDIO</code> pela URL do arquivo de áudio que você deseja reproduzir.</p>
+
+    <h2>Links Úteis</h2>
+    <p>Para mais informações sobre o uso do elemento de áudio em HTML, você pode consultar a documentação do <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/audio" target="_blank">MDN Web Docs</a>.</p>
+    
+    <a href="pagina5.html">Iframe</a>
+    <br>
+    <a href="index.html">Início</a>
 </body>
 </html>
